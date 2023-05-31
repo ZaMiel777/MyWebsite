@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <link rel="icon" type="img/png" href="/Image/meow.PNG">
+
+    <!-- เรียกใช้ Bootstrap 5 แบบ Internal -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- เรียกใข้ Flie Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- เรียกใช้ icon จาก FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/narwhal?f=classic&s=solid&pc=%2349d0fd">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- aos Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm " style="background: linear-gradient(to left, #9af6f4, #707df7);">
+        <div class="container" >
+            <img class="nav-logo" src="/Image/Logo.PNG" width="50px">
+             <a href="index.html" class="navbar-brand fw-bolder" style="color: #e2fdfb;">MY PORTFOLIO</a>
+             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+             <!-- Menu -->
+             <div id="navbar1" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link fw-bolder">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#infor" class="nav-link fw-bolder">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link fw-bolder">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder" data-bs-toggle="modal" data-bs-target="#mymodal">Contact</a>
+                    </li>
+                </ul>
+             </div>
+        </div>
+    </nav>
+
+    <!-- Slide  -->
+    <section id="slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="mySlider">
+            <ol class="carousel-indicators">
+                <button data-bs-target="#mySlider" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#mySlider" data-bs-slide-to="1"></button>
+                <button data-bs-target="#mySlider" data-bs-slide-to="2"></button>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">Welcome to my Website!</h1>
+                            <p class="fs-4" style="color: #e2fdfb;">ยินดีต้อนรับสู่เว็บไซต์</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2">
+                   <div class="container">
+                       <div class="carousel-caption d-none d-sm-block bg-dark">
+                           <h1 class="display-3">Welcome to my Website!</h1>
+                           <p class="fs-4" style="color: #e2fdfb;">เว็บไซต์นี้จัดทำขึ้นเพื่อทำความเข้าใจเกี่ยวกับภาษา HTML, CSS3, Bootstrap5</p>
+                       </div>
+                   </div>
+                </div>
+                <div class="carousel-item carousel-image-3">
+                   <div class="container">
+                       <div class="carousel-caption d-none d-sm-block">
+                           <h1 class="display-3">Welcome to my Website!</h1>
+                           <p class="fs-4" style="color: #e2fdfb;">หากผิดพลาดประการใดขออภัยมา ณ ที่นี้</p>
+                       </div>
+                   </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#mySlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#mySlider" data-bs-slide="next">
+                   <span class="carousel-control-next-icon"></span>
+               </button>
+            </div>
+        </div>
+   </section>
+
+<!-- Information -->
+   <section id="infor">
+    <div class="container" data-aos="fade-down" data-aos-duration="2000">
+        <div class="row">
+            <div class="col-md-4 mt-4" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/Image/profile1.jpg" width="400px" height="600px" style="border-radius: 30px;">
+            </div>
+            <div class="col-md-8 mt-4 p-4 shadow-lg" style="background: linear-gradient(to right, #707df7, #9af6f4); border-radius: 30px;" >
+                <h1 class="fw-bolder" style="color: rgb(8, 85, 95);" data-aos="fade-down" data-aos-duration="2000">
+                    <i class="fa-solid fa-heart" style="color: #49d0fd;"></i>
+                    About Me</h1>
+                <hr style="border-top: 2.5px solid rgb(0, 0, 0)">
+                <h3 style="color: #e2fdfb" data-aos="fade-left" data-aos-duration="2000">My profile</h3>
+                
+                <table class="table table-borderless" data-aos="fade-left" data-aos-duration="2000">
+                    <tr>
+                        <td class="text-end"><i class="fas fa-user" style="color: #e2fdfb;"></i></td>
+                        <td>Naphatsawan Chanthaprasobsuk</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end"><i class="fa-solid fa-phone" style="color: #e2fdfb;"></i></td>
+                        <td>+66 642153479</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end"><i class="fa-solid fa-location-dot" style="color: #e2fdfb;"></i></td>
+                        <td>Rangsit University</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end"><i class="fa-solid fa-file-code"  style="color: #e2fdfb;"></i></td>
+                        <td>Computer Engineering</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end"><i class="fa-solid fa-envelope" style="color: #e2fdfb;" ></i></td>
+                        <td>naphatsawan.c63@rsu.ac.th</td>
+                    </tr>
+                </table>
+                <hr style="border-top: 2.5px solid rgb(0, 0, 0)">
+                <table class="table table-borderless" data-aos="fade-down" data-aos-duration="2000">
+                    <tr>
+                        <td class="text-center"><i class=" fa-brands fa-facebook fa-4x m-4 " style="color: #e2fdfb;"></i></td>
+                        <td class="text-center"><i class=" fa-brands fa-square-instagram fa-4x m-4 " style="color: #e2fdfb;"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="color: #e2fdfb;">Namphueng Naphatsawan</td>
+                        <td class="text-center" style="color: #e2fdfb;">Namphueng Naphatsawan</td>
+                    </tr>
+                
+                </table>
+            </div> 
+        </div>
+    </div>
+   </section>
+   
+
+   <!-- Project -->
+   <section id="project">
+    <div class="container my-5" data-aos="fade-down" data-aos-duration="2000">
+        <div class="row">
+            <div class="rounded-3 text-center">
+                <h1 class="my-5 fw-bolder" style="color: rgb(8, 85, 95);" data-aos="zoom-out-down">
+                    <i class="fa-solid fa-heart"  style="color: #e2fdfb;" data-aos="fade-left"></i>
+                    Project
+                    <i class="fa-solid fa-heart"  style="color: #e2fdfb;" data-aos="fade-right"></i></h1> 
+                    <hr style="border-top: 2.5px solid rgb(0, 0, 0)" >
+            </div>
+            <hr>
+
+            <div class="card-group">
+                <div class="card shadow-lg m-4 col-md-3 rounded" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="/Image/Arduino.JPG" class="card-img-top" alt="">
+                    <div class="card-body" >
+                        <h4 class="card-title text-center fw-bolder" >Automatic Plant Watering System</h4>
+                        <p class="card-text" style="color: #1194c2;">ระบบรดน้ำต้นไม้อัตโนมัติ โดยตรวจสอบเงื่อนไขจากเซนเซอร์วัดความชื้นในดิน 
+                            (Soil Moisture Sensor)และเซนเซอร์วัดอุณหภูมิและความชื้น (DHT11) 
+                            นำไปเชื่อมกับบอร์ด Arduino ที่เป็นแผงควบคุมระบบ (Microcontroller) 
+                            โดยค่าสถานะต่างๆคือค่าอุณหภูมิ,ค่าความชื้นในอากาศ 
+                            จากเซนเซอร์วัดอุณหภูมิและความชื้นและค่าความชื้นในดินจากเซนเซอร์วัดความชื้นในดิน 
+                            จะแสดงค่าผ่านจอ LCD เพื่อให้ผู้ใช้ดูค่าสถานะต่างๆได้</p>
+                    </div>
+                </div>
+
+                <div class="card shadow-lg m-4 col-md-3 rounded" data-aos="zoom-out-down" data-aos-duration="1000">
+                    <img src="/Image/mayu.jpg.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title text-center fw-bolder">ระบบจองโต๊ะอาหาร</h4>
+                        <p class="card-text" style="color: #1194c2;">เป็นโปรแกรมที่จำลองการจองโต๊ะอาหารหรือการยกเลิกจองโต๊ะอาหารโดยใช้ภาษา C# ในการเขียนโปรแกรม
+                            และโปรแกรมสามารถคำนวณเงินโดยการใส่จำนวนอาหารที่ต้องการ และสรุปยอดเงินเพื่อนำไปแสดงในใบเสร็จ
+                            </p>
+                    </div>
+                </div>
+                
+                <div class="card shadow-lg m-4 col-md-3 rounded" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="/Image/DollShop.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title text-center fw-bolder">ระบบจัดการร้านขายตุ๊กตา</h4>
+                        <p class="card-text" style="color: #1194c2;">เป็นโปรแกรมจำลองการจัดการร้านขายตุ๊กตาโดยใช้ภาษา C# ร่วมกับ Microsoft Access </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   
+
+   <!-- Skill -->
+   <section id=="myskill">
+    <div class="container my-5" data-aos="fade-down" data-aos-duration="2000">
+        <div style="background: linear-gradient(to right, #707df7, #9af6f4); border-radius: 30px;"
+        data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <h1 class="my-5 p-3 text-center fw-bolder" style="color: rgb(8, 85, 95);" >My Skill</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 text-center" data-aos="zoom-in-up">
+                <i class="fas fa-solid fa-narwhal fa-4x my-2"></i>
+                <h3>C</h3>
+                <hr>
+                <li>Arduino ระบบรดน้ำต้นไม้อัตโนมัติ</li>
+            </div>
+
+            <div class="col-md-4 text-center" data-aos="zoom-in-up">
+                <i class="fas fa-solid fa-narwhal fa-4x my-2"></i>
+                <h3>C#</h3>
+                <hr>
+                <li>ระบบจองโต๊ะอาหาร</li>
+                <li>ร้านขายตุ๊กตา (Database Microsoft Access)</li>
+            </div>
+
+            <div class="col-md-4 text-center" data-aos="zoom-in-up">
+                <i class="fas fa-solid fa-narwhal fa-4x my-2"></i>
+                <h3>HTML5</h3>
+                <hr>
+                <li>MyWebsite (ใช้ร่วมกับ CSS3 & Bootstrap5)</li>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 text-center" data-aos="zoom-in-up">
+                <i class="fas fa-solid fa-narwhal fa-4x my-2"></i>
+                <h3>CSS3</h3>
+                <hr>
+                <li>MyWebsite</li>
+            </div>
+
+            <div class="col-md-4 text-center" data-aos="zoom-in-up">
+                <i class="fas fa-solid fa-narwhal fa-4x my-2"></i>
+                <h3>JavaScript</h3>
+                <hr>
+                <li>-----</li>
+            </div>
+
+            <div class="col-md-4 text-center" data-aos="zoom-in-up">
+                <i class="fas fa-solid fa-narwhal fa-4x my-2"></i>
+                <h3>Bootstrap5</h3>
+                <hr>
+                <li>MyWebsite</li>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 text-center" data-aos="zoom-in-up">
+                    <i class="fas fa-solid fa-narwhal fa-4x my-2"></i>
+                    <h3>Python (work in progress)</h3>
+                    <hr>
+                    <p>กำลังดำเนินการทำโปรเจคในรายวิชา CPE499</p>
+                </div>
+                <div class="col-md-6 text-center" data-aos="zoom-in-up">
+                    <i class="fas fa-solid fa-narwhal fa-4x my-2"></i>
+                    <h3>Java (work in progress)</h3>
+                    <hr>
+                    <p>กำลังดำเนินการทำความเข้าใจทบทวนเพิ่มเติม</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!-- modal ส่วนของ Contact -->
+   <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ข้อเสนอแนะ</h4>
+                    <button class=" btn-close" data-bs-dismiss="modal"></button>
+                </div>
+            
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>อีเมล</label>
+                            <input class="form-control my-2" type="e-mail" placeholder="ป้อนอีเมลของคุณ">
+                        </div>
+                        <div class="form-group">
+                            <label>หัวข้อเสนอแนะ</label>
+                            <input class="form-control my-2" type="text"  placeholder="ป้อนหัวข้อที่คุณต้องการนำเสนอ">
+                        </div>
+                        <div class="form-group">
+                            <label>รายละเอียด</label>
+                            <textarea cols="30" rows="10" class="form-control my-2"></textarea>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-bs-dismiss="modal">ยกเลิกการส่งข้อมูล</button>
+                            <button class="btn btn-success">ส่งข้อมูล</button>
+                        </div>
+                    </form>
+                </div>
+            </div>    
+        </div>
+   </div>
+    <!-- Footer -->
+   <footer class="text-center p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col fw-bolder">
+                <p>Copyright &copy; Naphatsawan 2023</p>
+            </div>
+        </div>
+    </div>
+   </footer>
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+    AOS.init();
+    </script>
+</body>
+</html>

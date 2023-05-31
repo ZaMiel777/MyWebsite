@@ -1,0 +1,62 @@
+*{
+    font-family: 'Mali', cursive;
+    font-weight: 2.5rem;
+    color:  #1194c2;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+li{
+    text-align: start;
+}
+
+hr{
+    border-top: 2.5px solid #1194c2;
+}
+
+i:hover{
+    color: black;
+}
+
+/* เรียกใช้งานรูปภาพ */
+.carousel-item{
+    height: 500px;
+}
+
+/* ชื่อคลาสอ้างอิงรูปภาพ */
+.carousel-image-1{
+    background-image: url(/Image/dolphin.jpg) ;
+    background-size: cover;
+}
+
+.carousel-image-2{
+    background-image: url(/Image/me5.jpg);
+    background-size: cover;
+}
+
+.carousel-image-3{
+    background-image: url(/Image/Me7.jpg);
+    background-size: cover;
+}
+
+#project{
+    background: linear-gradient(to left, #9af6f4, #707df7);
+    height: auto;
+}
+
+.card{
+    background-color: beige;
+}
+
+.card:hover{
+    background-color: black;
+    color: #9af6f4;
+}
+
+td{
+    text-align: start;
+    color:  #e2fdfb;
+}
+
+
+
